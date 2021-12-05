@@ -2,6 +2,18 @@
 
 Welton Chippy's website
 
+Inspired by [Vannsl/tailwind-landing-page-nuxt](https://github.com/Vannsl/tailwind-landing-page-nuxt).
+
+## Todo
+
+- Write README
+- Component tidy up + registration
+- nuxt.config.js fleshing out
+- Containerise it!
+- Push up to K8's cluster
+
+---
+
 ## Build Setup
 
 ```bash

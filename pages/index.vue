@@ -1,9 +1,13 @@
 <template>
-  <Tutorial/>
+  <div>
+    <hero />
+    <openingTimes />
+    <howToFindUs />
+    <offer />
+    <faqs />
+  </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({})
+<script>
+export default {}
 </script>

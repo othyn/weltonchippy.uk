@@ -1,0 +1,53 @@
+html {
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.gradient {
+  // background: linear-gradient(
+  //   90deg,
+  //   theme('colors.oxford-blue') 0%,
+  //   theme('colors.charcoal') 100%
+  // );
+
+  // background: linear-gradient(
+  //   90deg,
+  //   theme('colors.outrageous-orange') 0%,
+  //   theme('colors.cadmium-orange') 100%
+  // );
+
+  // background: linear-gradient(
+  //   180deg,
+  //   theme('colors.blue-green') 0%,
+  //   theme('colors.prussian-blue') 80%
+  // );
+
+  // background: radial-gradient(
+  //   circle farthest-corner at 0% 25%,
+  //   #2a9d8f 0%,
+  //   #264653 60%
+  // );
+
+  background: linear-gradient(
+    180deg,
+    theme('colors.blue-green') 0%,
+    theme('colors.prussian-blue') 80%
+  );
+}
+
+.mode-dark .gradient {
+  background: linear-gradient(
+    90deg,
+    theme('colors.orange-yellow-crayola') 0%,
+    theme('colors.burnt-sienna') 100%
+  );
+}
