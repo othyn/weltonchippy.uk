@@ -11,7 +11,7 @@
       </p>
 
       <div class="w-full my-4 text-center">
-        <termsAndConditions />
+        <ContentTermsAndConditions />
       </div>
 
       <div class="w-full my-8">
@@ -31,7 +31,7 @@
           >
           <span class="mx-4">|</span>
         </p>
-        <ToggleSwitch
+        <WidgetsToggleSwitch
           name="dark-mode"
           class="inline"
           :value="darkMode"

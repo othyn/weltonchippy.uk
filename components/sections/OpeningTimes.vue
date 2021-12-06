@@ -1,5 +1,5 @@
 <template>
-  <ContentBlock title="Opening Times">
+  <CoreContentBlock title="Opening Times">
     <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
       <table class="min-w-full divide-y divide-gray-200">
         <thead class="bg-gray-50">
@@ -53,7 +53,7 @@
       opening hours. This means the shop will close at 8:30pm, unless otherwise
       specified to close sooner.
     </p>
-  </ContentBlock>
+  </CoreContentBlock>
 </template>
 
 <script>
@@ -110,7 +110,7 @@ const timetable = [
 ]
 
 export default {
-  data () {
+  data() {
     return {
       timetable,
     }

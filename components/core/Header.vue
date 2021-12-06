@@ -4,7 +4,7 @@
       class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
     >
       <div class="pl-4 flex items-center">
-        <logo :is-stickable="true" :is-sticky="isSticky" />
+        <ContentLogo :is-stickable="true" :is-sticky="isSticky" />
       </div>
       <div class="block lg:hidden pr-4">
         <button

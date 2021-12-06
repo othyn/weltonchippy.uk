@@ -4,15 +4,30 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Welton Chippy',
+    title: 'Welton Chippy - Fish & Chips. Simply Delicious.',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Delicious Fish and Chips at Welton Chippy, Lincoln',
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content:
+          'Welton Chippy, Chippy, Kedgeree, Fast Food, Fish and Chips, Local Food, Welton by Lincoln, Welton, Lincoln, Chips, Fish, Take Out, Takeaway',
+      },
+      {
+        hid: 'author',
+        name: 'author',
+        content: 'Welton Chippy',
+      },
     ],
     link: [
       {

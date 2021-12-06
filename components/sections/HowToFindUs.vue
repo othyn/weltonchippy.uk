@@ -1,5 +1,5 @@
 <template>
-  <ContentBlock title="How To Find Us" secondary>
+  <CoreContentBlock title="How To Find Us" secondary>
     <p
       class="w-full mb-3 text-md font-medium leading-tight text-center text-gray-500"
     >
@@ -26,7 +26,7 @@
       frameborder="0"
     >
     </iframe>
-  </ContentBlock>
+  </CoreContentBlock>
 </template>
 
 <script>

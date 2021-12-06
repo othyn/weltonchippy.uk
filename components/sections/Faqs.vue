@@ -1,5 +1,5 @@
 <template>
-  <ContentBlock title="FAQ's" secondary no-border>
+  <CoreContentBlock title="FAQ's" secondary no-border>
     <h4 class="w-full mt-8 text-lg font-bold leading-tight text-gray-800">
       <span class="pr-1">💳</span> Do you take card?
     </h4>
@@ -37,9 +37,9 @@
       little bit more special, we ask for a minimum of 48 hours notice.
     </p>
     <div class="w-full mt-4 text-left text-gray-500">
-      <termsAndConditions />
+      <ContentTermsAndConditions />
     </div>
-  </ContentBlock>
+  </CoreContentBlock>
 </template>
 
 <script>

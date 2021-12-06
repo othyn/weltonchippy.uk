@@ -1,5 +1,5 @@
 <template>
-  <ContentBlock title="Current Offer">
+  <CoreContentBlock title="Current Offer">
     <h4
       class="w-full mt-8 text-3xl font-bold leading-tight text-center text-gray-800"
     >
@@ -7,9 +7,9 @@
     </h4>
 
     <div class="w-full mt-12 text-center text-gray-500">
-      <termsAndConditions />
+      <ContentTermsAndConditions />
     </div>
-  </ContentBlock>
+  </CoreContentBlock>
 </template>
 
 <script>

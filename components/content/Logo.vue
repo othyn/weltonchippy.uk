@@ -91,7 +91,6 @@
 
 <script>
 export default {
-  name: 'Logo',
   props: {
     isStickable: {
       type: Boolean,

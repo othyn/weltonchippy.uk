@@ -1,10 +1,10 @@
 <template>
   <div>
-    <hero />
-    <openingTimes />
-    <howToFindUs />
-    <offer />
-    <faqs />
+    <SectionsHero />
+    <SectionsOpeningTimes />
+    <SectionsHowToFindUs />
+    <SectionsOffer />
+    <SectionsFaqs />
   </div>
 </template>
 

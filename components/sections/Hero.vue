@@ -8,7 +8,7 @@
           class="flex flex-col w-full justify-center items-center text-center"
         >
           <h1 class="my-32">
-            <logo
+            <ContentLogo
               rotation="portrait"
               width-class="w-full max-w-full md:max-w-xl m-auto"
             />
@@ -23,7 +23,7 @@
 
     <!-- <img src="~assets/img/wave/header.svg?inline" alt="header wave" /> -->
 
-    <Wave />
+    <WidgetsWave />
   </div>
 </template>
 

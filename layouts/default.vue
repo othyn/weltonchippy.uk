@@ -1,20 +1,13 @@
 <template>
   <div class="leading-normal tracking-normal text-white gradient">
-    <site-header />
+    <CoreHeader />
     <nuxt />
-    <site-footer :dark-mode="darkMode" @toggle-dark-mode="darkMode = $event" />
+    <CoreFooter :dark-mode="darkMode" @toggle-dark-mode="darkMode = $event" />
   </div>
 </template>
 
 <script>
-import Header from '~/components/Header.vue'
-import Footer from '~/components/Footer.vue'
-
 export default {
-  components: {
-    'site-header': Header,
-    'site-footer': Footer,
-  },
   data() {
     return {
       darkMode: false,

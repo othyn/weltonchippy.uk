@@ -7,7 +7,7 @@
       Please see our full terms & conditions.
     </button>
 
-    <modal
+    <WidgetsModal
       v-if="showModal"
       title="Terms & Conditions"
       @close="showModal = false"
@@ -101,7 +101,7 @@
           </li>
         </ul>
       </div>
-    </modal>
+    </WidgetsModal>
   </div>
 </template>
 

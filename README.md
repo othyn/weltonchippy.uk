@@ -1,82 +1,75 @@
 # weltonchippy.uk
 
-Welton Chippy's website
+[![Continuous Integration](https://github.com/othyn/weltonchippy.uk/actions/workflows/ci.yml/badge.svg)](https://github.com/othyn/weltonchippy.uk/actions/workflows/ci.yml)
+[![Continuous Deployment](https://github.com/othyn/weltonchippy.uk/actions/workflows/cd.yml/badge.svg)](https://github.com/othyn/weltonchippy.uk/actions/workflows/cd.yml)
+[![GitHub license](https://img.shields.io/github/license/othyn/weltonchippy.uk)](https://github.com/othyn/weltonchippy.uk/blob/main/LICENSE)
+[![Love](https://img.shields.io/badge/built%20with-love-red)](https://img.shields.io/badge/built%20with-love-red)
 
-Inspired by [Vannsl/tailwind-landing-page-nuxt](https://github.com/Vannsl/tailwind-landing-page-nuxt).
+Welton Chippy's website (formerly Kedgeree), designed to be fresh and modern with inspiration from the sea with vibrancy. Design is inspired by [Vannsl/tailwind-landing-page-nuxt](https://github.com/Vannsl/tailwind-landing-page-nuxt).
+
+The repo is based on NuxtJS (in static mode) which is then containerised and served in a thin Alpine flavoured NGINX image in K8's to keep things light and easily maintainable.
+
+You can find the website at one of the following locations;
+
+- [weltonchippy.uk](https://weltonchippy.uk)
+- [welton-chippy.uk](https://welton-chippy.uk)
+- [kedgeree.uk](https://kedgeree.uk)
+
+With my favorite new fun locations being;
+
+- [chippy.rocks](https://chippy.rocks)
+- [welton.chippy.rocks](https://welton.chippy.rocks)
 
 ## Todo
 
-- Write README
-- Component tidy up + registration
-- nuxt.config.js fleshing out
 - Containerise it!
 - Push up to K8's cluster
 
----
+## Development
 
-## Build Setup
+When developing the site, use the following to get setup and running with a hot reload local environment:
 
 ```bash
-# install dependencies
+# Install dependencies
 $ yarn install
 
-# serve with hot reload at localhost:3000
+# Serve with hot reload at localhost:3000
 $ yarn dev
 
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+# Ensure the code is linted
+$ yarn lint
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org). Thought this sentence was best kept in!
 
-## Special Directories
+## Building the production app image
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+**The CD GitHub Action should auto build and tag an image for you based on when a new tag is created/pushed**, so you shouldn't need to build the image manually or push it. This will then become [available as part of GitHub's packages feature](https://github.com/othyn/othyn.com/pkgs/container/othyn.com). Just create a tag via a [new GitHub release](https://github.com/othyn/othyn.com/releases) or push a local tag, and it should do the rest.
 
-### `assets`
+However, if you do wish to do it, go ahead and run a normal Docker Compose build:
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+```bash
+# Ensure the code is linted
+$ yarn lint
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+# Production container build
+$ docker-compose build
 
-### `components`
+# ...or if you're having problems...
+$ docker-compose build --no-cache
+```
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+Then push it to a remote container registry of your choice. There should be no requirement to develop from the app container itself, however if you wish to, knock yourself out!
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+For manually building a static Nuxt output, here is a [handy list of commands](https://nuxtjs.org/announcements/going-full-static/#commands);
 
-### `layouts`
+```bash
+# Start the development server (static aware)
+$ yarn dev
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+# Bundle your Nuxt application for production if needed (static aware) and export your application to static HTML in `dist/` directory
+$ yarn generate
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+# Serve your production application from `dist/`
+$ yarn start
+```
