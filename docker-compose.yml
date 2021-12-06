@@ -1,0 +1,18 @@
+version: '3.7'
+
+networks:
+  uk.weltonchippy.network:
+    name: uk.weltonchippy.network
+
+services:
+  uk.weltonchippy.app:
+    container_name: uk.weltonchippy.app
+    build:
+        context: .
+        dockerfile: dockerfile
+    networks:
+      - uk.weltonchippy.network
+    ports:
+      - 8888:80
+    volumes:
+      - ./dist:/usr/share/nginx/html

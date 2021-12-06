@@ -20,11 +20,6 @@ With my favorite new fun locations being;
 - [chippy.rocks](https://chippy.rocks)
 - [welton.chippy.rocks](https://welton.chippy.rocks)
 
-## Todo
-
-- Containerise it!
-- Push up to K8's cluster
-
 ## Development
 
 When developing the site, use the following to get setup and running with a hot reload local environment:
@@ -53,13 +48,13 @@ However, if you do wish to do it, go ahead and run a normal Docker Compose build
 $ yarn lint
 
 # Production container build
-$ docker-compose build
+$ docker compose build
 
 # ...or if you're having problems...
-$ docker-compose build --no-cache
+$ docker compose build --no-cache
 ```
 
-Then push it to a remote container registry of your choice. There should be no requirement to develop from the app container itself, however if you wish to, knock yourself out!
+Then push it to a remote container registry of your choice. There should be no requirement to develop from the app container itself, however if you wish to, knock yourself out! You can navigate to [http://localhost:8888](http://localhost:8888) to view the container once up'd, or which ever port you defined in `./docker-compose.yml` against the `uk.weltonchippy.app` service.
 
 For manually building a static Nuxt output, here is a [handy list of commands](https://nuxtjs.org/announcements/going-full-static/#commands);
 
