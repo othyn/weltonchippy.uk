@@ -20,6 +20,8 @@ With my favorite new fun locations being;
 - [chippy.rocks](https://chippy.rocks)
 - [welton.chippy.rocks](https://welton.chippy.rocks)
 
+---
+
 ## Development
 
 When developing the site, use the following to get setup and running with a hot reload local environment:
@@ -36,6 +38,8 @@ $ yarn lint
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org). Thought this sentence was best kept in!
+
+---
 
 ## Building the production app image
 
@@ -68,3 +72,31 @@ $ yarn generate
 # Serve your production application from `dist/`
 $ yarn start
 ```
+
+---
+
+## Changelog
+
+Any and all project changes for releases should be documented below. Versioning follows the SEMVER standard.
+
+---
+
+### Version 1.0.0
+
+Initial release.
+
+#### Added
+
+- Everything
+
+#### Changed
+
+- Everything
+
+#### Fixed
+
+- Everything
+
+#### Removed
+
+- Everything
