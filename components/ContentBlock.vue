@@ -1,5 +1,5 @@
 <template>
-  <section :class="bgClass" class="py-12 px-4" :id="title">
+  <section :id="title" :class="bgClass" class="py-12 px-4">
     <div class="container max-w-5xl mx-auto m-8">
       <h1
         class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
@@ -24,6 +24,7 @@ export default {
     title: {
       type: String,
       required: false,
+      default: 'Set a title',
     },
     secondary: {
       type: Boolean,

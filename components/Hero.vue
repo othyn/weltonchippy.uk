@@ -10,7 +10,7 @@
           <h1 class="my-32">
             <logo
               rotation="portrait"
-              widthClass="w-full max-w-full md:max-w-xl m-auto"
+              width-class="w-full max-w-full md:max-w-xl m-auto"
             />
           </h1>
 

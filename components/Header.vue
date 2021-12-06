@@ -4,7 +4,7 @@
       class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
     >
       <div class="pl-4 flex items-center">
-        <logo :isStickable="true" :isSticky="isSticky" />
+        <logo :is-stickable="true" :is-sticky="isSticky" />
       </div>
       <div class="block lg:hidden pr-4">
         <button
@@ -101,6 +101,15 @@ export default {
       return classList
     },
   },
+  mounted() {
+    this.scrollY = window.scrollY
+    document.addEventListener('click', this.onClick)
+    document.addEventListener('scroll', this.onScroll)
+  },
+  beforeDestroy() {
+    document.removeEventListener('click', this.onClick, true)
+    document.removeEventListener('scroll', this.onScroll, true)
+  },
   methods: {
     onClick() {
       this.isOpen = false
@@ -111,15 +120,6 @@ export default {
     onToggleClick() {
       this.isOpen = !this.isOpen
     },
-  },
-  mounted() {
-    this.scrollY = window.scrollY
-    document.addEventListener('click', this.onClick)
-    document.addEventListener('scroll', this.onScroll)
-  },
-  beforeDestroy() {
-    document.removeEventListener('click', this.onClick, true)
-    document.removeEventListener('scroll', this.onScroll, true)
   },
 }
 </script>

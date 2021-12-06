@@ -4,10 +4,10 @@
       class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in mt-"
     >
       <input
+        :id="name"
         v-model="checked"
         type="checkbox"
         :name="name"
-        :id="name"
         class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
       />
       <label
@@ -35,6 +35,7 @@ export default {
     label: {
       type: String,
       required: false,
+      default: 'Set a label',
     },
   },
   data() {

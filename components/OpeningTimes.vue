@@ -110,9 +110,9 @@ const timetable = [
 ]
 
 export default {
-  data: function () {
+  data () {
     return {
-      timetable: timetable,
+      timetable,
     }
   },
 }

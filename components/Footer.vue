@@ -35,8 +35,8 @@
           name="dark-mode"
           class="inline"
           :value="darkMode"
-          @input="$emit('toggle-dark-mode', $event)"
           label=""
+          @input="$emit('toggle-dark-mode', $event)"
         />
       </div>
       <p class="w-full mt-4 text-md font-medium leading-tight text-white">

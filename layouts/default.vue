@@ -2,7 +2,7 @@
   <div class="leading-normal tracking-normal text-white gradient">
     <site-header />
     <nuxt />
-    <site-footer :darkMode="darkMode" @toggle-dark-mode="darkMode = $event" />
+    <site-footer :dark-mode="darkMode" @toggle-dark-mode="darkMode = $event" />
   </div>
 </template>
 

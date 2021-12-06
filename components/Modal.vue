@@ -1,7 +1,7 @@
 <template>
   <div
-    class="fixed w-full h-full top-0 left-0 flex items-center justify-center z-10"
     v-if="open"
+    class="fixed w-full h-full top-0 left-0 flex items-center justify-center z-10"
   >
     <div
       class="absolute w-full h-full bg-gray-900 opacity-50"
@@ -15,8 +15,8 @@
         >
           <h3>{{ title }}</h3>
           <div
-            @click="close"
             class="text-2xl hover:text-gray-600 cursor-pointer"
+            @click="close"
           >
             &#215;
           </div>
@@ -32,11 +32,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      open: true,
-    }
-  },
   props: {
     title: {
       type: String,
@@ -50,15 +45,13 @@ export default {
     width: {
       type: String,
       default: 'full',
-      validator: (value) =>
-        ['xs', 'sm', 'md', 'lg', 'full'].indexOf(value) !== -1,
+      validator: (value) => ['xs', 'sm', 'md', 'lg', 'full'].includes(value),
     },
   },
-  methods: {
-    close() {
-      this.open = false
-      this.$emit('close')
-    },
+  data() {
+    return {
+      open: true,
+    }
   },
   computed: {
     maxWidth() {
@@ -72,6 +65,8 @@ export default {
         case 'lg':
           return 'max-w-3xl'
         case 'full':
+          return 'max-w-full'
+        default:
           return 'max-w-full'
       }
     },
@@ -88,6 +83,12 @@ export default {
     this.$once('hook:beforeDestroy', () => {
       document.removeEventListener('keydown', onEscape)
     })
+  },
+  methods: {
+    close() {
+      this.open = false
+      this.$emit('close')
+    },
   },
 }
 </script>
