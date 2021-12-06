@@ -21,7 +21,9 @@
       </div>
     </div>
 
-    <img src="~assets/img/wave/header.svg?inline" alt="header wave" />
+    <!-- <img src="~assets/img/wave/header.svg?inline" alt="header wave" /> -->
+
+    <Wave />
   </div>
 </template>
 
