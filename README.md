@@ -43,7 +43,7 @@ For detailed explanation on how things work, check out the [documentation](https
 
 ## Building the production app image
 
-**The CD GitHub Action should auto build and tag an image for you based on when a new tag is created/pushed**, so you shouldn't need to build the image manually or push it. This will then become [available as part of GitHub's packages feature](https://github.com/othyn/othyn.com/pkgs/container/othyn.com). Just create a tag via a [new GitHub release](https://github.com/othyn/othyn.com/releases) or push a local tag, and it should do the rest.
+**The CD GitHub Action should auto build and tag an image for you based on when a new tag is created/pushed**, so you shouldn't need to build the image manually or push it. This will then become [available as part of GitHub's packages feature](https://github.com/othyn/weltonchippy.uk/pkgs/container/weltonchippy.uk). Just create a tag via a [new GitHub release](https://github.com/othyn/weltonchippy.uk/releases) or push a local tag, and it should do the rest.
 
 However, if you do wish to do it, go ahead and run a normal Docker Compose build:
 
@@ -83,7 +83,7 @@ Any and all project changes for releases should be documented below. Versioning 
 
 ### Version 1.0.0
 
-Initial release.
+[[Git Changes]](https://github.com/othyn/weltonchippy.uk/compare/v1.0.0-alpha.1...v1.0.0) Initial release.
 
 #### Added
 
