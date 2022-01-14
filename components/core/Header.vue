@@ -56,13 +56,13 @@
             >
           </li>
         </ul>
-        <a
+        <!-- <a
           :class="navActionClassList"
           class="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-3 lg:mt-0 py-3 px-6 shadow opacity-75"
           href="https://order.weltonchippy.uk"
         >
           Order
-        </a>
+        </a> -->
       </div>
     </div>
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
