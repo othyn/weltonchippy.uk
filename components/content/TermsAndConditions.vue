@@ -22,13 +22,26 @@
           </li>
           <li>
             Offer can only be redeemed on <b>one</b> redeemable food item or
-            <b>one</b> set of items in an order, unless stated otherwise. e.g.
-            "Buy one Fish & Chips, get the SECOND Half Price" applies to only
-            <b>one</b> set of "Fish & Chips" in the order, the set of items in
-            this case consisting of one portion of "chips" (item 1) and one
-            "fish" (item 2). It <b>cannot</b> be used to discount multiple items
-            or sets of items on the same order. This applies for any food item,
-            offer item and offer discount.
+            <b>one</b> set of items in an order, unless stated otherwise. For
+            example, "Buy one Fish & Chips, get the SECOND Half Price" applies
+            to only <b>one</b> set of "Fish & Chips" in the order, the set of
+            items in this case consisting of one portion of "chips" (item 1) and
+            one "fish" (item 2). It <b>cannot</b> be used to discount multiple
+            items or sets of items on the same order. This applies for any food
+            item, offer item and offer discount.
+          </li>
+          <li>
+            Where an offer states, for example; "Buy two regular fish & chips,
+            get a small sausage & chips" this means you will recieve
+            <b>one</b> portion of "small chips" and <b>one</b> "small sausage"
+            on the successful purchase of <b>two</b> portions of "regular fish"
+            and <b>two</b> portions of "regular chips". The portion
+            classification applies to the meal as a set, using this case as an
+            example, the set of items that makes up <b>two</b> "regular fish &
+            chips" consists of <b>two</b> portions of "regular chips" and
+            <b>two</b> "regular fish", with the same principal applying to
+            "small sausage & chips", which is a set made up of <b>one</b> "small
+            sausage" and <b>one</b> portion of "small chips".
           </li>
           <li>Offer is <b>not</b> valid on Fridays.</li>
           <li>

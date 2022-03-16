@@ -81,6 +81,29 @@ Any and all project changes for releases should be documented below. Versioning 
 
 ---
 
+### Version 1.0.1
+
+[[Git Changes]](https://github.com/othyn/weltonchippy.uk/compare/v1.0.0...v1.0.1) Offer change 🐟
+
+#### Added
+
+- Nothing
+
+#### Changed
+
+- Changed the current offer from Fish to Sausage 🐟
+- Updated T&C's to reflect the above change
+
+#### Fixed
+
+- Nothing
+
+#### Removed
+
+- Nothing
+
+---
+
 ### Version 1.0.0
 
 [[Git Changes]](https://github.com/othyn/weltonchippy.uk/compare/v1.0.0-alpha.1...v1.0.0) Initial release.
