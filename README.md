@@ -45,6 +45,8 @@ For detailed explanation on how things work, check out the [documentation](https
 
 **The CD GitHub Action should auto build and tag an image for you based on when a new tag is created/pushed**, so you shouldn't need to build the image manually or push it. This will then become [available as part of GitHub's packages feature](https://github.com/othyn/weltonchippy.uk/pkgs/container/weltonchippy.uk). Just create a tag via a [new GitHub release](https://github.com/othyn/weltonchippy.uk/releases) or push a local tag, and it should do the rest.
 
+**GitHub Actions not triggering?** Yeah, thought something had majorly broken. But given they worked fine before, and after having a [look around online](https://stackoverflow.com/a/69452858/4494375), turns out [GitHub Actions was just down](https://www.githubstatus.com/). Although a slight annoyance as there isn't a way to trigger the actions manually, so time to delete the v1.0.1 tag, re-create it to trigger the Action when its back online and then re-attach the GitHub release to the tag.
+
 However, if you do wish to do it, go ahead and run a normal Docker Compose build:
 
 ```bash
