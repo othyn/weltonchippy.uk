@@ -27,7 +27,7 @@
           <a
             class="font-bold hover:underline"
             href="https://github.com/othyn/weltonchippy.uk/releases"
-            >v1.0.1</a
+            >v1.1.4</a
           >
           <span class="mx-4">|</span>
         </p>
