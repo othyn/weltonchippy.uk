@@ -1,7 +1,7 @@
 # weltonchippy.uk
 
-[![Continuous Integration](https://github.com/othyn/weltonchippy.uk/actions/workflows/ci.yml/badge.svg)](https://github.com/othyn/weltonchippy.uk/actions/workflows/ci.yml)
-[![Continuous Deployment](https://github.com/othyn/weltonchippy.uk/actions/workflows/cd.yml/badge.svg)](https://github.com/othyn/weltonchippy.uk/actions/workflows/cd.yml)
+[![Lint](https://github.com/othyn/othyn.com/actions/workflows/00-lint.yml/badge.svg)](https://github.com/othyn/othyn.com/actions/workflows/00-lint.yml)
+[![Build and Push GitHub Pages](https://github.com/othyn/othyn.com/actions/workflows/01-pages.yml/badge.svg)](https://github.com/othyn/othyn.com/actions/workflows/01-pages.yml)
 [![GitHub license](https://img.shields.io/github/license/othyn/weltonchippy.uk)](https://github.com/othyn/weltonchippy.uk/blob/main/LICENSE)
 [![Love](https://img.shields.io/badge/built%20with-love-red)](https://img.shields.io/badge/built%20with-love-red)
 
@@ -74,54 +74,3 @@ $ yarn generate
 # Serve your production application from `dist/`
 $ yarn start
 ```
-
----
-
-## Changelog
-
-Any and all project changes for releases should be documented below. Versioning follows the SEMVER standard.
-
----
-
-### Version 1.0.1
-
-[[Git Changes]](https://github.com/othyn/weltonchippy.uk/compare/v1.0.0...v1.0.1) Offer change 🐟
-
-#### Added
-
-- Nothing
-
-#### Changed
-
-- Changed the current offer from Fish to Sausage 🐟
-- Updated T&C's to reflect the above change
-
-#### Fixed
-
-- Nothing
-
-#### Removed
-
-- Nothing
-
----
-
-### Version 1.0.0
-
-[[Git Changes]](https://github.com/othyn/weltonchippy.uk/compare/v1.0.0-alpha.1...v1.0.0) Initial release.
-
-#### Added
-
-- Everything
-
-#### Changed
-
-- Everything
-
-#### Fixed
-
-- Everything
-
-#### Removed
-
-- Everything
