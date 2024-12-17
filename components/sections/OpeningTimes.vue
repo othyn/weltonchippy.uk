@@ -2,9 +2,15 @@
   <CoreContentBlock title="Opening Times">
     <div class="flex flex-col">
       <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-        <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+        <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+          <p class="mb-5 text-gray-500">
+            <span class="font-bold">Please note:</span> We will be closed for
+            Christmas and New Year between Sunday, 22nd of December 2024 through
+            to Thursday, 2nd of January 2025.
+          </p>
+
           <div
-            class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"
+            class="overflow-hidden border-b border-gray-200 shadow sm:rounded-lg"
           >
             <table class="min-w-full divide-y divide-gray-200">
               <thead class="bg-gray-50">
@@ -12,13 +18,13 @@
                   <th></th>
                   <th
                     scope="col"
-                    class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider"
+                    class="px-6 py-3 text-sm font-medium tracking-wider text-left text-gray-500 uppercase"
                   >
                     Lunch
                   </th>
                   <th
                     scope="col"
-                    class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider"
+                    class="px-6 py-3 text-sm font-medium tracking-wider text-left text-gray-500 uppercase"
                   >
                     Tea
                   </th>
@@ -27,12 +33,12 @@
               <tbody class="bg-white divide-y divide-gray-200">
                 <tr v-for="day in timetable" :key="day.name">
                   <td
-                    class="px-6 py-4 whitespace-nowrap text-md font-bold text-gray-500"
+                    class="px-6 py-4 font-bold text-gray-500 whitespace-nowrap text-md"
                   >
                     {{ day.name }}
                   </td>
                   <td
-                    class="px-6 py-4 whitespace-nowrap text-md font-medium text-gray-500"
+                    class="px-6 py-4 font-medium text-gray-500 whitespace-nowrap text-md"
                   >
                     {{ day.times.lunch.open }}
                     <span v-if="day.times.lunch.close">
@@ -40,7 +46,7 @@
                     </span>
                   </td>
                   <td
-                    class="px-6 py-4 whitespace-nowrap text-md font-medium text-gray-500"
+                    class="px-6 py-4 font-medium text-gray-500 whitespace-nowrap text-md"
                   >
                     {{ day.times.dinner.open }}
                     <span v-if="day.times.dinner.close">
@@ -62,7 +68,7 @@ const timetable = [
   {
     name: 'Monday',
     times: {
-      lunch: { open: '11:30', close: '13:30' },
+      lunch: { open: 'Closed', close: '' },
       dinner: { open: '16:30', close: '20:00' },
     },
   },
@@ -70,14 +76,14 @@ const timetable = [
     name: 'Tuesday',
     times: {
       lunch: { open: '11:30', close: '13:30' },
-      dinner: { open: '16:30', close: '20:30' },
+      dinner: { open: '16:30', close: '20:00' },
     },
   },
   {
     name: 'Wednesday',
     times: {
       lunch: { open: '11:30', close: '13:30' },
-      dinner: { open: '16:30', close: '20:30' },
+      dinner: { open: '16:30', close: '20:00' },
     },
   },
   {
