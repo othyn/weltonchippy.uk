@@ -5,8 +5,8 @@
         <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
           <p class="mb-5 text-gray-500">
             <span class="font-bold">Please note:</span> We will be closed for
-            Christmas and New Year between Sunday, 22nd of December 2024 through
-            to Thursday, 2nd of January 2025.
+            Christmas and New Year from Sunday, 22 December 2024, and will
+            reopen on Thursday, 2 January 2025.
           </p>
 
           <div
