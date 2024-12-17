@@ -2,8 +2,8 @@
   <div>
     <img src="~assets/img/wave/footer.svg?inline" alt="footer wave" />
 
-    <section class="container mx-auto text-center py-6 text-white">
-      <p class="w-full mt-4 text-md font-medium leading-tight">
+    <section class="container py-6 mx-auto text-center text-white">
+      <p class="w-full mt-4 font-medium leading-tight text-md">
         <span class="font-bold">PJ Interests Ltd</span><br />VAT Number
         <span class="font-bold">679 2307 07</span><br />Registered in England &
         Wales <span class="font-bold">3250662</span><br />Registered Office
@@ -16,18 +16,18 @@
 
       <div class="w-full my-8">
         <div
-          class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"
+          class="w-1/6 h-1 py-0 mx-auto my-0 bg-white rounded-t opacity-25"
         ></div>
       </div>
 
       <div class="">
         <p
-          class="w-full mt-4 text-md font-medium leading-tight text-white inline"
+          class="inline w-full mt-4 font-medium leading-tight text-white text-md"
         >
           <a
             class="font-bold hover:underline"
             href="https://github.com/othyn/weltonchippy.uk/releases"
-            >v1.1.4</a
+            >v1.1.5</a
           >
           <span class="mx-4">|</span>
         </p>
@@ -39,7 +39,7 @@
           @input="$emit('toggle-dark-mode', $event)"
         />
       </div>
-      <p class="w-full mt-4 text-md font-medium leading-tight text-white">
+      <p class="w-full mt-4 font-medium leading-tight text-white text-md">
         made with ♥️ by othyn.
       </p>
     </section>
