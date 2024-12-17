@@ -22,6 +22,27 @@ With my favorite new fun locations being;
 
 ---
 
+## Setup
+
+If you don't use the Node version required by this project already, I recommend using [fnm](https://github.com/Schniz/fnm) (via `brew`) to install and manage Node versions (although `nvm` or any other flavour of a Node version manager is fine.) Once you have `fnm` (or whatever) installed, they should read from the projects `./.node-version` file:
+
+```sh
+# Install the Node version as defined in ./.node-version
+fnm install
+
+# Use the Node version as defined in ./.node-version
+fnm use
+
+# Check active Node version matches that required by the project
+cat ./.node-version
+node -v
+# fnm current
+```
+
+Done!
+
+---
+
 ## Development
 
 When developing the site, use the following to get setup and running with a hot reload local environment:
