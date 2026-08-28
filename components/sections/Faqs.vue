@@ -1,5 +1,5 @@
 <template>
-  <CoreContentBlock title="FAQ's" secondary no-border>
+  <CoreContentBlock title="FAQ's" no-border>
     <h4 class="w-full mt-8 text-lg font-bold leading-tight text-gray-800">
       <span class="pr-1">💳</span> Do you take card?
     </h4>
@@ -34,6 +34,14 @@
     <p class="w-full mt-4 font-medium leading-tight text-gray-500 text-md">
       Absolutely! To ensure that we can do our best to help make your day that
       little bit more special, we ask for a minimum of 48 hours notice.
+    </p>
+
+    <h4 class="w-full mt-8 text-lg font-bold leading-tight text-gray-800">
+      <span class="pr-1">🗓️</span> Are you open on bank holidays?
+    </h4>
+    <p class="w-full mt-4 font-medium leading-tight text-gray-500 text-md">
+      We're closed on bank holiday Mondays, unless stated otherwise. If we are
+      opening for one, we'll say so on here beforehand.
     </p>
     <div class="w-full mt-4 text-left text-gray-500">
       <ContentTermsAndConditions />

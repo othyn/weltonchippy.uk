@@ -1,6 +1,10 @@
 <template>
   <div>
-    <img src="~assets/img/wave/footer.svg?inline" alt="footer wave" />
+    <img
+      class="-mt-px"
+      src="~assets/img/wave/footer.svg?inline"
+      alt="footer wave"
+    />
 
     <section class="container py-6 mx-auto text-center text-white">
       <p class="w-full mt-4 font-medium leading-tight text-md">
@@ -27,7 +31,7 @@
           <a
             class="font-bold hover:underline"
             href="https://github.com/othyn/weltonchippy.uk/releases"
-            >v1.1.6</a
+            >v1.1.7</a
           >
           <span class="mx-4">|</span>
         </p>

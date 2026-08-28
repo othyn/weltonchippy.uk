@@ -13,57 +13,7 @@
       @close="showModal = false"
     >
       <div class="text-left text-gray-800">
-        <h3 class="font-bold text-xl pb-1">Offer T&C's</h3>
-
-        <ul class="list-disc pl-4">
-          <li>
-            Offer can only be redeemed <b>once</b> per order, <b>once</b> per
-            customer, <b>once</b> per day.
-          </li>
-          <li>
-            Offer can only be redeemed on <b>one</b> redeemable food item or
-            <b>one</b> set of items in an order, unless stated otherwise. For
-            example, "Buy one Fish & Chips, get the SECOND Half Price" applies
-            to only <b>one</b> set of "Fish & Chips" in the order, the set of
-            items in this case consisting of one portion of "chips" (item 1) and
-            one "fish" (item 2). It <b>cannot</b> be used to discount multiple
-            items or sets of items on the same order. This applies for any food
-            item, offer item and offer discount.
-          </li>
-          <li>
-            Where an offer states, for example; "Buy two regular fish & chips,
-            get a small sausage & chips" this means you will recieve
-            <b>one</b> portion of "small chips" and <b>one</b> "small sausage"
-            on the successful purchase of <b>two</b> portions of "regular fish"
-            and <b>two</b> portions of "regular chips". The portion
-            classification applies to the meal as a set, using this case as an
-            example, the set of items that makes up <b>two</b> "regular fish &
-            chips" consists of <b>two</b> portions of "regular chips" and
-            <b>two</b> "regular fish", with the same principal applying to
-            "small sausage & chips", which is a set made up of <b>one</b> "small
-            sausage" and <b>one</b> portion of "small chips".
-          </li>
-          <li>Offer is <b>not</b> valid on Fridays.</li>
-          <li>
-            Offer is non-negotiable and <b>cannot</b> be used in conjunction
-            with any other offers.
-          </li>
-          <li>
-            Offer can be printed or displayed on an electronic device (e.g.
-            smart phone), but <b>must</b> be presented to the member of staff
-            taking your order at checkout in order to be redeemed.
-          </li>
-          <li>
-            Offer is only valid during the displayed dates and/or time periods.
-          </li>
-          <li>
-            Offer is only valid for/on <b>regular</b> portion sizes, unless
-            otherwise specified and <b>cannot</b> be negotiated.
-          </li>
-          <li>All offers are subject to availability.</li>
-        </ul>
-
-        <h3 class="font-bold text-xl mt-8 pb-1">General T&C's</h3>
+        <h3 class="font-bold text-xl pb-1">General T&C's</h3>
 
         <p class="pb-1">
           This is only a very brief abstract of our full terms and conditions.

@@ -44,13 +44,6 @@
           <li class="mr-3">
             <a
               class="inline-block font-bold no-underline hover:text-gray-800 hover:underline py-2 px-4"
-              href="#Current Offer"
-              >Current Offer</a
-            >
-          </li>
-          <li class="mr-3">
-            <a
-              class="inline-block font-bold no-underline hover:text-gray-800 hover:underline py-2 px-4"
               href="#FAQ's"
               >FAQ's</a
             >

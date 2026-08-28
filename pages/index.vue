@@ -3,7 +3,6 @@
     <SectionsHero />
     <SectionsOpeningTimes />
     <SectionsHowToFindUs />
-    <SectionsOffer />
     <SectionsFaqs />
   </div>
 </template>
