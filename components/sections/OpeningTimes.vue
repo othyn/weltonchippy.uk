@@ -89,7 +89,7 @@ const timetable = [
     name: 'Thursday',
     times: {
       lunch: { open: '11:30', close: '13:30' },
-      dinner: { open: '16:30', close: '20:30' },
+      dinner: { open: '16:30', close: '20:00' },
     },
   },
   {
